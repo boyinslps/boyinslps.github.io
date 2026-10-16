@@ -8,19 +8,9 @@
 <title>教學網站總覽</title>
 <style>
 :root{
-  --bg:#f4f5f7; --surface:#ffffff; --surface2:#eef0f4; --line:#d9dde4;
-  --text:#1c2430; --muted:#5d6878; --accent:#1f3a5f; --accent2:#3b5b86; --accent-soft:#e6ecf4;
-  --shadow:0 1px 2px rgba(20,30,50,.06);
-}
-@media (prefers-color-scheme:dark){
-  :root:not([data-theme="light"]){
-    --bg:#10151c; --surface:#171e28; --surface2:#1d2633; --line:#2b3544;
-    --text:#e4e8ee; --muted:#93a0b2; --accent:#9db8dc; --accent2:#7f9ec8; --accent-soft:#1f2b3c; --shadow:none;
-  }
-}
-:root[data-theme="dark"]{
   --bg:#10151c; --surface:#171e28; --surface2:#1d2633; --line:#2b3544;
   --text:#e4e8ee; --muted:#93a0b2; --accent:#9db8dc; --accent2:#7f9ec8; --accent-soft:#1f2b3c; --shadow:none;
+  color-scheme:dark;
 }
 *{box-sizing:border-box}
 html{scroll-behavior:smooth}
@@ -28,9 +18,7 @@ body{margin:0;background:var(--bg);color:var(--text);
   font-family:"Noto Sans TC","Microsoft JhengHei",system-ui,-apple-system,sans-serif;line-height:1.6}
 a{color:inherit;text-decoration:none}
 .wrap{max-width:980px;margin:0 auto;padding:0 16px}
-header{background:var(--accent);color:#fff;padding:40px 0 28px}
-@media (prefers-color-scheme:dark){:root:not([data-theme="light"]) header{background:#18222f;border-bottom:1px solid var(--line)}}
-:root[data-theme="dark"] header{background:#18222f;border-bottom:1px solid var(--line)}
+header{background:#18222f;border-bottom:1px solid var(--line);color:#e4e8ee;padding:40px 0 28px}
 header h1{margin:0 0 6px;font-size:1.7rem;letter-spacing:.04em;font-weight:700}
 header p{margin:0;opacity:.82;font-size:.95rem}
 .toolbar{display:flex;flex-wrap:wrap;gap:10px;margin:22px 0 8px;align-items:center}
@@ -118,13 +106,9 @@ const DATA = [
       {t:"L05 訊息查證小偵探",u:"pcclass/g5/L05/"},
       {t:"L06 整理成查證文件",u:"pcclass/g5/L06/"}
     ]},
-    { group:"六年級｜數位校園安全", sub:"1 堂課", links:[
-      {t:"L02 事實還是意見？",d:"六上 教學活動",u:"pcclass/g6/L02/"}
-    ]},
     { group:"課程總覽地圖", sub:"各年級導覽", links:[
       {t:"四年級資訊課：導覽小書任務",u:"curriculum-map/grade4.html"},
-      {t:"五年級資訊課：數位校園安全・守護者任務",u:"curriculum-map/grade5.html"},
-      {t:"六年級資訊課：數位校園安全",u:"curriculum-map/grade6.html"}
+      {t:"五年級資訊課：數位校園安全・守護者任務",u:"curriculum-map/grade5.html"}
     ]},
     { t:"五年級資訊課：冒險新篇章", d:"五年級課程入口", u:"PC/" }
   ]},
