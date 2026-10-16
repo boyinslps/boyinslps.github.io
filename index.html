@@ -1,0 +1,217 @@
+<!doctype html>
+<html lang="zh-Hant">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="author" content="資訊老師黃博胤">
+<meta name="description" content="資訊老師黃博胤的教學網站總覽：課程、遊戲、競賽與 AI 工具，依分類收合整理。">
+<title>教學網站總覽</title>
+<style>
+:root{
+  --bg:#f4f5f7; --surface:#ffffff; --surface2:#eef0f4; --line:#d9dde4;
+  --text:#1c2430; --muted:#5d6878; --accent:#1f3a5f; --accent2:#3b5b86; --accent-soft:#e6ecf4;
+  --shadow:0 1px 2px rgba(20,30,50,.06);
+}
+@media (prefers-color-scheme:dark){
+  :root:not([data-theme="light"]){
+    --bg:#10151c; --surface:#171e28; --surface2:#1d2633; --line:#2b3544;
+    --text:#e4e8ee; --muted:#93a0b2; --accent:#9db8dc; --accent2:#7f9ec8; --accent-soft:#1f2b3c; --shadow:none;
+  }
+}
+:root[data-theme="dark"]{
+  --bg:#10151c; --surface:#171e28; --surface2:#1d2633; --line:#2b3544;
+  --text:#e4e8ee; --muted:#93a0b2; --accent:#9db8dc; --accent2:#7f9ec8; --accent-soft:#1f2b3c; --shadow:none;
+}
+*{box-sizing:border-box}
+html{scroll-behavior:smooth}
+body{margin:0;background:var(--bg);color:var(--text);
+  font-family:"Noto Sans TC","Microsoft JhengHei",system-ui,-apple-system,sans-serif;line-height:1.6}
+a{color:inherit;text-decoration:none}
+.wrap{max-width:980px;margin:0 auto;padding:0 16px}
+header{background:var(--accent);color:#fff;padding:40px 0 28px}
+@media (prefers-color-scheme:dark){:root:not([data-theme="light"]) header{background:#18222f;border-bottom:1px solid var(--line)}}
+:root[data-theme="dark"] header{background:#18222f;border-bottom:1px solid var(--line)}
+header h1{margin:0 0 6px;font-size:1.7rem;letter-spacing:.04em;font-weight:700}
+header p{margin:0;opacity:.82;font-size:.95rem}
+.toolbar{display:flex;flex-wrap:wrap;gap:10px;margin:22px 0 8px;align-items:center}
+.search{flex:1 1 240px;padding:10px 14px;border:1px solid var(--line);border-radius:8px;
+  background:var(--surface);color:var(--text);font:inherit;font-size:.95rem}
+.search:focus{outline:2px solid var(--accent2);outline-offset:1px}
+button.btn{padding:9px 14px;border:1px solid var(--line);border-radius:8px;background:var(--surface);
+  color:var(--text);font:inherit;font-size:.88rem;cursor:pointer}
+button.btn:hover{background:var(--surface2)}
+.stats{color:var(--muted);font-size:.85rem;margin:0 0 6px}
+nav.cats{display:flex;flex-wrap:wrap;gap:8px;margin:10px 0 24px}
+nav.cats a{font-size:.85rem;padding:5px 12px;border-radius:999px;background:var(--accent-soft);color:var(--accent)}
+nav.cats a:hover{filter:brightness(.95)}
+section.cat{margin-bottom:30px;scroll-margin-top:12px}
+.cat-head{display:flex;align-items:baseline;gap:10px;border-bottom:2px solid var(--accent);padding-bottom:6px;margin-bottom:12px}
+.cat-head h2{margin:0;font-size:1.15rem;color:var(--accent)}
+.cat-head span{color:var(--muted);font-size:.85rem}
+.list{display:grid;gap:8px}
+.link{display:flex;align-items:center;gap:12px;padding:11px 14px;background:var(--surface);
+  border:1px solid var(--line);border-radius:8px;box-shadow:var(--shadow);transition:border-color .15s}
+.link:hover{border-color:var(--accent2)}
+.link .t{font-weight:600;font-size:.96rem}
+.link .d{color:var(--muted);font-size:.83rem}
+.link .go{margin-left:auto;color:var(--accent2);font-size:.8rem;white-space:nowrap}
+.link .body{min-width:0}
+details.grp{background:var(--surface);border:1px solid var(--line);border-radius:8px;box-shadow:var(--shadow);overflow:hidden}
+details.grp>summary{list-style:none;cursor:pointer;display:flex;align-items:center;gap:10px;
+  padding:12px 14px;font-weight:600;user-select:none}
+details.grp>summary::-webkit-details-marker{display:none}
+details.grp>summary::before{content:"";width:7px;height:7px;border-right:2px solid var(--accent2);
+  border-bottom:2px solid var(--accent2);transform:rotate(-45deg);transition:transform .15s;flex:none}
+details.grp[open]>summary::before{transform:rotate(45deg)}
+details.grp>summary:hover{background:var(--surface2)}
+details.grp>summary .n{margin-left:auto;color:var(--muted);font-size:.8rem;font-weight:400}
+details.grp>summary .sub{color:var(--muted);font-size:.83rem;font-weight:400}
+.grp .inner{display:grid;gap:6px;padding:4px 12px 12px;border-top:1px solid var(--line);background:var(--surface2)}
+.grp .inner .link{box-shadow:none}
+.empty{display:none;text-align:center;color:var(--muted);padding:40px 0}
+footer{border-top:1px solid var(--line);margin-top:40px;padding:18px 0 28px;color:var(--muted);font-size:.8rem}
+footer .wrap{display:flex;justify-content:space-between;gap:12px;flex-wrap:wrap}
+.sig{margin-left:auto}
+@media (max-width:560px){header h1{font-size:1.4rem}.link .go{display:none}}
+</style>
+</head>
+<body>
+<header>
+  <div class="wrap">
+    <h1>教學網站總覽</h1>
+    <p>資訊課程、教學遊戲、競賽活動與 AI 工具｜依分類整理，點選年級可展開</p>
+  </div>
+</header>
+
+<main class="wrap">
+  <div class="toolbar">
+    <input id="q" class="search" type="search" placeholder="搜尋網頁名稱或關鍵字…" aria-label="搜尋">
+    <button class="btn" id="open">全部展開</button>
+    <button class="btn" id="close">全部收合</button>
+  </div>
+  <p class="stats" id="stats"></p>
+  <nav class="cats" id="nav" aria-label="分類導覽"></nav>
+  <div id="root"></div>
+  <div class="empty" id="empty">找不到符合的網頁</div>
+</main>
+
+<footer>
+  <div class="wrap">
+    <span>網站資料來源：GitHub 帳號 boyinslps</span>
+    <span class="sig">made by 資訊老師黃博胤</span>
+  </div>
+</footer>
+
+<script>
+const B = "https://boyinslps.github.io/";
+const DATA = [
+  { id:"course", name:"課程教學", note:"各年級課堂活動頁", items:[
+    { group:"四年級｜台南小導遊養成記", sub:"六堂課", links:[
+      ["L01","pcclass/g4/L01/"],["L02","pcclass/g4/L02/"],["L03","pcclass/g4/L03/"],
+      ["L04","pcclass/g4/L04/"],["L05","pcclass/g4/L05/"],["L06","pcclass/g4/L06/"]
+    ].map(([n,p])=>({t:"四上 "+n,d:"台南小導遊養成記",u:p}))},
+    { group:"五年級｜訊息查證與數位素養", sub:"六堂課", links:[
+      {t:"L01 直覺大考驗",u:"pcclass/g5/L01/"},
+      {t:"L02 事實還是意見？",u:"pcclass/g5/L02/"},
+      {t:"L03 文章身分證與 5W 查證",u:"pcclass/g5/L03/"},
+      {t:"L04 照片影片查出身",u:"pcclass/g5/L04/"},
+      {t:"L05 訊息查證小偵探",u:"pcclass/g5/L05/"},
+      {t:"L06 整理成查證文件",u:"pcclass/g5/L06/"}
+    ]},
+    { group:"六年級｜數位校園安全", sub:"1 堂課", links:[
+      {t:"L02 事實還是意見？",d:"六上 教學活動",u:"pcclass/g6/L02/"}
+    ]},
+    { group:"課程總覽地圖", sub:"各年級導覽", links:[
+      {t:"四年級資訊課：導覽小書任務",u:"curriculum-map/grade4.html"},
+      {t:"五年級資訊課：數位校園安全・守護者任務",u:"curriculum-map/grade5.html"},
+      {t:"六年級資訊課：數位校園安全",u:"curriculum-map/grade6.html"}
+    ]},
+    { t:"五年級資訊課：冒險新篇章", d:"五年級課程入口", u:"PC/" }
+  ]},
+  { id:"typing", name:"打字遊戲", note:"班級打字競賽各版本", items:[
+    { group:"班級打字競賽（歷代版本）", sub:"4 個版本", links:[
+      {t:"打字競賽 V1｜動物獎章版",u:"typegame/"},
+      {t:"打字競賽 V2｜動物獎章版",u:"typegamev2/"},
+      {t:"打字競賽 V3",u:"typegameV3/"},
+      {t:"打字競賽 V4",u:"typegameV4/"}
+    ]},
+    { t:"打字勇者", d:"全班討伐戰", u:"typehero/" }
+  ]},
+  { id:"scratch", name:"Scratch 程式", note:"積木程式挑戰", items:[
+    { t:"台南一日之旅｜Scratch 程式大挑戰", d:"主要版本", u:"Scratch/" },
+    { t:"台南一日之旅｜Scratch 程式大挑戰", d:"Friday 班級版", u:"Scratch_Friday/" }
+  ]},
+  { id:"contest", name:"競賽與社團", note:"活動型專題", items:[
+    { group:"AI 繪家賀卡創作營", sub:"5 節 + 活動首頁", links:[
+      {t:"活動首頁",u:"pcclass/contest/"},
+      {t:"第 1 節 認識 e度與主題",u:"pcclass/contest/C01/"},
+      {t:"第 2 節 文字創作與提問",u:"pcclass/contest/C02/"},
+      {t:"第 3 節 AI 繪圖與 Canva 排版",u:"pcclass/contest/C03/"},
+      {t:"第 4 節 檢查、歷程紀錄與說明書",u:"pcclass/contest/C04/"},
+      {t:"第 5 節 檢查與交件",u:"pcclass/contest/C05/"}
+    ]},
+    { group:"機器人闖關｜校隊選拔", sub:"3 個頁面", links:[
+      {t:"機器人闖關",d:"學生入口",u:"robot-quest/"},
+      {t:"機器人闖關",d:"Mockup 預覽",u:"robot-quest/mockup/"},
+      {t:"機器人校隊選拔：教師後台",d:"教師用",u:"robot-quest/teacher/"}
+    ]}
+  ]},
+  { id:"ai", name:"AI 工具與通識", note:"提示詞與 AI 學習", items:[
+    { t:"AI 通識課程｜重點筆記與提示詞庫（Day 1）", d:"成人 AI 通識課", u:"AI-for-Everyone/" },
+    { t:"AI Magic Prompt Builder", d:"提示詞產生器", u:"4grade/" }
+  ]}
+];
+
+const root = document.getElementById("root"), nav = document.getElementById("nav");
+const esc = s => s.replace(/[&<>"]/g, c => ({"&":"&amp;","<":"&lt;",">":"&gt;",'"':"&quot;"}[c]));
+const linkHTML = l => `<a class="link" href="${B+l.u}" target="_blank" rel="noopener" data-s="${esc((l.t+" "+(l.d||"")).toLowerCase())}">
+  <div class="body"><div class="t">${esc(l.t)}</div>${l.d?`<div class="d">${esc(l.d)}</div>`:""}</div><span class="go">開啟 ↗</span></a>`;
+
+let total = 0;
+DATA.forEach(c => {
+  let count = 0;
+  const body = c.items.map(it => {
+    if (it.group) {
+      count += it.links.length;
+      const g = it.group.toLowerCase();
+      return `<details class="grp" data-g="${esc(g)}"><summary>${esc(it.group)}<span class="sub">${esc(it.sub||"")}</span><span class="n">${it.links.length} 頁</span></summary>
+        <div class="inner">${it.links.map(l=>linkHTML({...l,d:l.d||""})).join("")}</div></details>`;
+    }
+    count++; return linkHTML(it);
+  }).join("");
+  total += count;
+  root.insertAdjacentHTML("beforeend",
+    `<section class="cat" id="${c.id}"><div class="cat-head"><h2>${c.name}</h2><span>${c.note}｜${count} 頁</span></div><div class="list">${body}</div></section>`);
+  nav.insertAdjacentHTML("beforeend", `<a href="#${c.id}">${c.name}</a>`);
+});
+document.getElementById("stats").textContent = `共 ${DATA.length} 個分類、${total} 個網頁`;
+
+const setAll = v => document.querySelectorAll("details.grp").forEach(d => d.open = v);
+document.getElementById("open").onclick = () => setAll(true);
+document.getElementById("close").onclick = () => setAll(false);
+
+document.getElementById("q").addEventListener("input", e => {
+  const q = e.target.value.trim().toLowerCase();
+  let shown = 0;
+  document.querySelectorAll("section.cat").forEach(sec => {
+    let any = false;
+    sec.querySelectorAll(".list > .link").forEach(a => {
+      const ok = !q || a.dataset.s.includes(q); a.style.display = ok ? "" : "none"; if (ok) {any = true; shown++;}
+    });
+    sec.querySelectorAll("details.grp").forEach(d => {
+      const titleHit = q && d.dataset.g.includes(q);
+      let hit = 0;
+      d.querySelectorAll(".link").forEach(a => {
+        const ok = !q || titleHit || a.dataset.s.includes(q); a.style.display = ok ? "" : "none"; if (ok) hit++;
+      });
+      d.style.display = hit ? "" : "none";
+      if (q && hit) d.open = true;
+      if (hit) {any = true; shown += hit;}
+    });
+    sec.style.display = any ? "" : "none";
+  });
+  document.getElementById("empty").style.display = shown ? "none" : "block";
+});
+</script>
+</body>
+</html>
