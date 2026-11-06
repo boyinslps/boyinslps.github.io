@@ -190,6 +190,26 @@ document.getElementById("q").addEventListener("input", e => {
   });
   document.getElementById("empty").style.display = shown ? "none" : "block";
 });
+
+// 自動偵測：auto.json 由 GitHub Action 定期產生，列出帳號下有開 Pages、
+// 但還沒放進上面固定清單的網站，集中顯示在「最新新增」。
+fetch("auto.json", {cache:"no-cache"}).then(r => r.ok ? r.json() : []).then(repos => {
+  const known = [];
+  DATA.forEach(c => c.items.forEach(it => (it.links || [it]).forEach(l => known.push(l.u))));
+  const fresh = [];
+  repos.forEach(r => {
+    const covered = known.some(u => u.startsWith(r.repo + "/"));
+    r.pages.forEach(p => {
+      if (r.explicit ? !known.includes(p.u) : !covered) fresh.push(p);
+    });
+  });
+  if (!fresh.length) return;
+  total += fresh.length;
+  root.insertAdjacentHTML("afterbegin",
+    `<section class="cat" id="new"><div class="cat-head"><h2>最新新增</h2><span>自動偵測，尚未分類｜${fresh.length} 頁</span></div><div class="list">${fresh.map(linkHTML).join("")}</div></section>`);
+  nav.insertAdjacentHTML("afterbegin", `<a href="#new">最新新增</a>`);
+  document.getElementById("stats").textContent = `共 ${DATA.length + 1} 個分類、${total} 個網頁`;
+}).catch(() => {});
 </script>
 </body>
 </html>

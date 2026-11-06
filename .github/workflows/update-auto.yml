@@ -1,0 +1,36 @@
+name: 更新自動清單
+
+on:
+  schedule:
+    - cron: "17 */6 * * *"
+  workflow_dispatch:
+  push:
+    paths:
+      - scripts/gen_auto.py
+      - .github/workflows/update-auto.yml
+
+permissions:
+  contents: write
+  pages: write
+
+jobs:
+  update:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - name: 產生 auto.json
+        run: python3 scripts/gen_auto.py
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+      - name: 有變動才提交並重新部署
+        env:
+          GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+        run: |
+          if [ -n "$(git status --porcelain auto.json)" ]; then
+            git config user.name "github-actions[bot]"
+            git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+            git add auto.json
+            git commit -m "自動更新網站清單"
+            git push
+            gh api -X POST "repos/${{ github.repository }}/pages/builds" || true
+          fi
