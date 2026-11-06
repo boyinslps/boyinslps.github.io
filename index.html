@@ -197,7 +197,9 @@ fetch("auto.json", {cache:"no-cache"}).then(r => r.ok ? r.json() : []).then(repo
   const known = [];
   DATA.forEach(c => c.items.forEach(it => (it.links || [it]).forEach(l => known.push(l.u))));
   const fresh = [];
-  repos.forEach(r => {
+  // 刻意不放上首頁的舊網站（也可改在該 repo 加 topic「no-index」）
+  const HIDDEN = ["Scratch_Friday", "typegame", "typegamev2", "typegameV3"];
+  repos.filter(r => !HIDDEN.includes(r.repo)).forEach(r => {
     const covered = known.some(u => u.startsWith(r.repo + "/"));
     r.pages.forEach(p => {
       if (r.explicit ? !known.includes(p.u) : !covered) fresh.push(p);
