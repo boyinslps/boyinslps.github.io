@@ -31,6 +31,7 @@ jobs:
             git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
             git add auto.json
             git commit -m "自動更新網站清單"
+            git pull --rebase
             git push
             gh api -X POST "repos/${{ github.repository }}/pages/builds" || true
           fi
