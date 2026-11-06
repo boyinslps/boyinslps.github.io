@@ -130,45 +130,6 @@
   ]
  },
  {
-  "repo": "typegameV3",
-  "title": "typegameV3",
-  "desc": "",
-  "explicit": false,
-  "pages": [
-   {
-    "t": "typegameV3",
-    "d": "",
-    "u": "typegameV3/"
-   }
-  ]
- },
- {
-  "repo": "typegamev2",
-  "title": "typegamev2",
-  "desc": "",
-  "explicit": false,
-  "pages": [
-   {
-    "t": "typegamev2",
-    "d": "",
-    "u": "typegamev2/"
-   }
-  ]
- },
- {
-  "repo": "typegame",
-  "title": "typegame",
-  "desc": "",
-  "explicit": false,
-  "pages": [
-   {
-    "t": "typegame",
-    "d": "",
-    "u": "typegame/"
-   }
-  ]
- },
- {
   "repo": "PC",
   "title": "PC",
   "desc": "",
