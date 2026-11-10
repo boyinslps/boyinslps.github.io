@@ -1,5 +1,18 @@
 [
  {
+  "repo": "typehero",
+  "title": "typehero",
+  "desc": "",
+  "explicit": false,
+  "pages": [
+   {
+    "t": "typehero",
+    "d": "",
+    "u": "typehero/"
+   }
+  ]
+ },
+ {
   "repo": "robot-quest",
   "title": "機器人闖關",
   "desc": "國小機器人校隊選手篩選測驗（積木程式，前端 mockup）",
@@ -22,19 +35,6 @@
     "t": "pcclass",
     "d": "",
     "u": "pcclass/"
-   }
-  ]
- },
- {
-  "repo": "typehero",
-  "title": "typehero",
-  "desc": "",
-  "explicit": false,
-  "pages": [
-   {
-    "t": "typehero",
-    "d": "",
-    "u": "typehero/"
    }
   ]
  },
