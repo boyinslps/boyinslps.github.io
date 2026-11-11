@@ -13,19 +13,6 @@
   ]
  },
  {
-  "repo": "robot-quest",
-  "title": "機器人闖關",
-  "desc": "國小機器人校隊選手篩選測驗（積木程式，前端 mockup）",
-  "explicit": false,
-  "pages": [
-   {
-    "t": "機器人闖關",
-    "d": "國小機器人校隊選手篩選測驗（積木程式，前端 mockup）",
-    "u": "robot-quest/"
-   }
-  ]
- },
- {
   "repo": "pcclass",
   "title": "pcclass",
   "desc": "",
@@ -35,6 +22,19 @@
     "t": "pcclass",
     "d": "",
     "u": "pcclass/"
+   }
+  ]
+ },
+ {
+  "repo": "robot-quest",
+  "title": "機器人闖關",
+  "desc": "國小機器人校隊選手篩選測驗（積木程式，前端 mockup）",
+  "explicit": false,
+  "pages": [
+   {
+    "t": "機器人闖關",
+    "d": "國小機器人校隊選手篩選測驗（積木程式，前端 mockup）",
+    "u": "robot-quest/"
    }
   ]
  },
