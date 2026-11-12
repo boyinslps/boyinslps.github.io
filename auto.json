@@ -1,18 +1,5 @@
 [
  {
-  "repo": "pcclass",
-  "title": "pcclass",
-  "desc": "",
-  "explicit": false,
-  "pages": [
-   {
-    "t": "pcclass",
-    "d": "",
-    "u": "pcclass/"
-   }
-  ]
- },
- {
   "repo": "typehero",
   "title": "typehero",
   "desc": "",
@@ -22,6 +9,19 @@
     "t": "typehero",
     "d": "",
     "u": "typehero/"
+   }
+  ]
+ },
+ {
+  "repo": "pcclass",
+  "title": "pcclass",
+  "desc": "",
+  "explicit": false,
+  "pages": [
+   {
+    "t": "pcclass",
+    "d": "",
+    "u": "pcclass/"
    }
   ]
  },
