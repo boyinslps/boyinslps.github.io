@@ -1,5 +1,18 @@
 [
  {
+  "repo": "lego-course",
+  "title": "樂高競賽課程（SPIKE Prime）",
+  "desc": "搭配官方 App 的闖關學習單",
+  "explicit": false,
+  "pages": [
+   {
+    "t": "樂高競賽課程（SPIKE Prime）",
+    "d": "搭配官方 App 的闖關學習單",
+    "u": "lego-course/"
+   }
+  ]
+ },
+ {
   "repo": "pcclass",
   "title": "pcclass",
   "desc": "",
