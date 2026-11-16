@@ -1,14 +1,14 @@
 [
  {
-  "repo": "lego-course",
-  "title": "樂高競賽課程（SPIKE Prime）",
-  "desc": "搭配官方 App 的闖關學習單",
+  "repo": "typehero",
+  "title": "typehero",
+  "desc": "",
   "explicit": false,
   "pages": [
    {
-    "t": "樂高競賽課程（SPIKE Prime）",
-    "d": "搭配官方 App 的闖關學習單",
-    "u": "lego-course/"
+    "t": "typehero",
+    "d": "",
+    "u": "typehero/"
    }
   ]
  },
@@ -26,15 +26,15 @@
   ]
  },
  {
-  "repo": "typehero",
-  "title": "typehero",
-  "desc": "",
+  "repo": "lego-course",
+  "title": "樂高競賽課程（SPIKE Prime）",
+  "desc": "搭配官方 App 的闖關學習單",
   "explicit": false,
   "pages": [
    {
-    "t": "typehero",
-    "d": "",
-    "u": "typehero/"
+    "t": "樂高競賽課程（SPIKE Prime）",
+    "d": "搭配官方 App 的闖關學習單",
+    "u": "lego-course/"
    }
   ]
  },
