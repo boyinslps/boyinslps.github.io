@@ -1,18 +1,5 @@
 [
  {
-  "repo": "typehero",
-  "title": "typehero",
-  "desc": "",
-  "explicit": false,
-  "pages": [
-   {
-    "t": "typehero",
-    "d": "",
-    "u": "typehero/"
-   }
-  ]
- },
- {
   "repo": "robot-quest",
   "title": "機器人闖關",
   "desc": "國小機器人校隊選手篩選測驗（積木程式，前端 mockup）",
@@ -26,15 +13,15 @@
   ]
  },
  {
-  "repo": "lego-course",
-  "title": "樂高競賽課程（SPIKE Prime）",
-  "desc": "搭配官方 App 的闖關學習單",
+  "repo": "typehero",
+  "title": "typehero",
+  "desc": "",
   "explicit": false,
   "pages": [
    {
-    "t": "樂高競賽課程（SPIKE Prime）",
-    "d": "搭配官方 App 的闖關學習單",
-    "u": "lego-course/"
+    "t": "typehero",
+    "d": "",
+    "u": "typehero/"
    }
   ]
  },
@@ -48,6 +35,19 @@
     "t": "pcclass",
     "d": "",
     "u": "pcclass/"
+   }
+  ]
+ },
+ {
+  "repo": "lego-course",
+  "title": "樂高競賽課程（SPIKE Prime）",
+  "desc": "搭配官方 App 的闖關學習單",
+  "explicit": false,
+  "pages": [
+   {
+    "t": "樂高競賽課程（SPIKE Prime）",
+    "d": "搭配官方 App 的闖關學習單",
+    "u": "lego-course/"
    }
   ]
  },
