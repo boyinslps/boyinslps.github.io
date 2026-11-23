@@ -1,18 +1,5 @@
 [
  {
-  "repo": "pcclass",
-  "title": "pcclass",
-  "desc": "",
-  "explicit": false,
-  "pages": [
-   {
-    "t": "pcclass",
-    "d": "",
-    "u": "pcclass/"
-   }
-  ]
- },
- {
   "repo": "typehero",
   "title": "typehero",
   "desc": "",
@@ -35,6 +22,32 @@
     "t": "機器人闖關",
     "d": "國小機器人校隊選手篩選測驗（積木程式，前端 mockup）",
     "u": "robot-quest/"
+   }
+  ]
+ },
+ {
+  "repo": "pcclass",
+  "title": "pcclass",
+  "desc": "",
+  "explicit": false,
+  "pages": [
+   {
+    "t": "pcclass",
+    "d": "",
+    "u": "pcclass/"
+   }
+  ]
+ },
+ {
+  "repo": "platform-guide",
+  "title": "備課 × 評分平台導覽站",
+  "desc": "給教育科技人員的專案引導",
+  "explicit": false,
+  "pages": [
+   {
+    "t": "備課 × 評分平台導覽站",
+    "d": "給教育科技人員的專案引導",
+    "u": "platform-guide/"
    }
   ]
  },
