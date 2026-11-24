@@ -13,19 +13,6 @@
   ]
  },
  {
-  "repo": "robot-quest",
-  "title": "機器人闖關",
-  "desc": "國小機器人校隊選手篩選測驗（積木程式，前端 mockup）",
-  "explicit": false,
-  "pages": [
-   {
-    "t": "機器人闖關",
-    "d": "國小機器人校隊選手篩選測驗（積木程式，前端 mockup）",
-    "u": "robot-quest/"
-   }
-  ]
- },
- {
   "repo": "pcclass",
   "title": "pcclass",
   "desc": "",
@@ -39,19 +26,6 @@
   ]
  },
  {
-  "repo": "platform-guide",
-  "title": "備課 × 評分平台導覽站",
-  "desc": "給教育科技人員的專案引導",
-  "explicit": false,
-  "pages": [
-   {
-    "t": "備課 × 評分平台導覽站",
-    "d": "給教育科技人員的專案引導",
-    "u": "platform-guide/"
-   }
-  ]
- },
- {
   "repo": "lego-course",
   "title": "樂高競賽課程（SPIKE Prime）",
   "desc": "搭配官方 App 的闖關學習單",
@@ -61,6 +35,32 @@
     "t": "樂高競賽課程（SPIKE Prime）",
     "d": "搭配官方 App 的闖關學習單",
     "u": "lego-course/"
+   }
+  ]
+ },
+ {
+  "repo": "robot-quest",
+  "title": "機器人闖關",
+  "desc": "國小機器人校隊選手篩選測驗（積木程式，前端 mockup）",
+  "explicit": false,
+  "pages": [
+   {
+    "t": "機器人闖關",
+    "d": "國小機器人校隊選手篩選測驗（積木程式，前端 mockup）",
+    "u": "robot-quest/"
+   }
+  ]
+ },
+ {
+  "repo": "platform-guide",
+  "title": "備課 × 評分平台導覽站",
+  "desc": "給教育科技人員的專案引導",
+  "explicit": false,
+  "pages": [
+   {
+    "t": "備課 × 評分平台導覽站",
+    "d": "給教育科技人員的專案引導",
+    "u": "platform-guide/"
    }
   ]
  },
